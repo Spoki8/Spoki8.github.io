@@ -1,0 +1,28 @@
+html {
+    background-color: yellow;
+}
+
+.menu {
+    color: yellow;
+    padding-left: 10.7%;
+    padding-right: 10.7%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-style: solid;
+    border-color: brown;
+    background-color: brown;
+    margin-bottom: 10px;
+}
+
+
+.menu:hover {
+    box-shadow: 3px 3px 7px black;
+}
+
+.lap {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    height: 1000px;
+}
+
