@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    
+}
+
+video {
+    position: relative;
+    left: 45%;
+    top: -80px;
+    border: solid;
+    border-radius: 5px;
+}
+
+#bevezeto {
+    text-align: left;
+    position: relative;
+    margin-right: 60%;
+    margin-left: 40px;
+    top: 120px;
+}
+
+#aktualis {
+    border: solid;
+    text-align: left;
+    margin-right: 35%;
+    position: relative;
+    top: 40px;
+    padding: 0 15px 50px;
+    
+}
+
+#aktualisutolso {
+    border: solid;
+    text-align: left;
+    margin-right: 35%;
+    position: relative;
+    top: 40px;
+    padding-left: 15px;
+}
+
+img#aktualiskep {
+    float: right;
+    position: relative;
+    top: -140px;
+    right: 2%;
+}
+
+div#sor {
+    margin-bottom: 10%;
+}
+
+p#kisbetu {
+    text-align: right;
+    margin-left: 60%;
+    font-size: 12px;
+    margin-right: 20px;
+}
+

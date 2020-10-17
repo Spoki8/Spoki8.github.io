@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+figure {
+    position: relative;
+    left: 50%;
+    top: -300px;
+}

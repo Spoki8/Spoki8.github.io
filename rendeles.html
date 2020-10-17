@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/rendeles.css">
+    <link rel="stylesheet" href="lib/dist/css/bootstrap-grid.min.css">
+
+</head>
+
+<body>
+    <main>
+        <nav id="fomenu">
+            <span>
+                <img hidden src="img/IKON.jpg" alt="" width="10%" height="10%">
+                <a id="fomenupont" href="index.html">Kezdőlap</a>
+                <a id="fomenupont" href="étlap.html">Étlap</a>
+                <a id="fomenupont" href="rendeles.html">Rendelés</a>
+                <a id="fomenupont" href="elerhetoseg.html">Elérhetőség</a>
+            </span>
+        </nav>
+        <h1>Rendelés</h1>
+        <form action="mailto:pizzazoo@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Ételválasztás</legend>
+                <table>
+                    <tr>
+                        <td>Margherita</td>
+                        <td>1510 Ft</td>
+                        <td>
+                            <input type="radio" name="margherita" value="normal" id="n1" checked>
+                            <label for="n1">normal</label><br>
+                            <input type="radio" name="margherita" value="vastag" id="v1">
+                            <label for="v1">vastag</label>
+
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Sonka-kukorica</td>
+                        <td>1610 Ft</td>
+                        <td>
+                            <input type="radio" name="sonkakukorica" value="normal" id="n2" id="n2" checked>
+                            <label for="n2">normal</label><br>
+                            <input type="radio" name="sonkakukorica" value="vastag" id="v2" id="v2">
+                            <label for="v2">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Songoku</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="Songoku" value="normal" id="n3" checked>
+                            <label for="n3">normal</label><br>
+                            <input type="radio" name="Songoku" value="vastag" id="v3">
+                            <label for="v3">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Szalámi</td>
+                        <td>1510 Ft</td>
+                        <td>
+                            <input type="radio" name="szalami" value="normal" id="n4" checked>
+                            <label for="n4">normal</label><br>
+                            <input type="radio" name="szalami" value="vastag" id="v4">
+                            <label for="v4">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Húsimádó</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="husimado" value="normal" id="n5" checked>
+                            <label for="n5">normal</label><br>
+                            <input type="radio" name="husimado" value="vastag" id="v5">
+                            <label for="v5">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Vegetáriánus</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="vegetarianus" value="normal" id="n6" checked>
+                            <label for="n6">normal</label><br>
+                            <input type="radio" name="vegetarianus" value="vastag" id="v6">
+                            <label for="v6">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Tenger gyümölcsei</td>
+                        <td>1950 Ft</td>
+                        <td>
+                            <input type="radio" name="tengergyumolcsei" value="normal" id="n7" checked>
+                            <label for="n7">normal</label><br>
+                            <input type="radio" name="tengergyumolcsei" value="vastag" id="v7">
+                            <label for="v7">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Magyaros</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="magyaros" value="normal" id="n8" checked>
+                            <label for="n8">normal</label><br>
+                            <input type="radio" name="magyaros" value="vastag" id="v8">
+                            <label for="v8">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Géza kedvence</td>
+                        <td>1610 Ft</td>
+                        <td>
+                            <input type="radio" name="gezakedvence" value="normal" id="n9" checked>
+                            <label for="n9">normal</label><br>
+                            <input type="radio" name="gezakedvence" value="vastag" id="v9">
+                            <label for="v9">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Négy évszak</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="negyevszak" value="normal" id="n10" checked>
+                            <label for="n10">normal</label><br>
+                            <input type="radio" name="negyevszak" value="vastag" id="v10">
+                            <label for="v10">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Négysajtos</td>
+                        <td>1610 Ft</td>
+                        <td>
+                            <input type="radio" name="negysajtos" value="normal" id="n11" checked>
+                            <label for="n11">normal</label><br>
+                            <input type="radio" name="negysajtos" value="vastag" id="v11">
+                            <label for="v11">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>BBQ</td>
+                        <td>1610 Ft</td>
+                        <td>
+                            <input type="radio" name="bbq" value="normal" id="n12" checked>
+                            <label for="n12">normal</label><br>
+                            <input type="radio" name="bbq" value="vastag" id="v12">
+                            <label for="v12">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Mexikói</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="mexikoi" value="normal" id="n13" checked>
+                            <label for="n13">normal</label><br>
+                            <input type="radio" name="mexikoi" value="vastag" id="v13">
+                            <label for="v13">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Sajtimádó</td>
+                        <td>1650 Ft</td>
+                        <td>
+                            <input type="radio" name="sajtimado" value="normal" id="n14" checked>
+                            <label for="n14">normal</label><br>
+                            <input type="radio" name="sajtimado" value="vastag" id="v14">
+                            <label for="v14">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="fitness" value="normal" id="n15" checked>
+                            <label for="n15">normal</label><br>
+                            <input type="radio" name="fitness" value="vastag" id="v15">
+                            <label for="v15">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Tonhalas</td>
+                        <td>1850 Ft</td>
+                        <td>
+                            <input type="radio" name="tonhalas" value="normal" id="n16" checked>
+                            <label for="n16">normal</label><br>
+                            <input type="radio" name="tonhalas" value="vastag" id="v16">
+                            <label for="v16">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Görög</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="gorog" value="normal" id="n17" checked>
+                            <label for="n17">normal</label><br>
+                            <input type="radio" name="gorog" value="vastag" id="v17">
+                            <label for="v17">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Gyros</td>
+                        <td>1850 Ft</td>
+                        <td>
+                            <input type="radio" name="gyros" value="normal" id="n18" checked>
+                            <label for="n18">normal</label><br>
+                            <input type="radio" name="gyros" value="vastag" id="v18">
+                            <label for="v18">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Hawaii</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="hawaii" value="normal" id="n19" checked>
+                            <label for="n19">normal</label><br>
+                            <input type="radio" name="hawaii" value="vastag" id="v19">
+                            <label for="v19">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Bivaly</td>
+                        <td>1750 Ft</td>
+                        <td>
+                            <input type="radio" name="bivaly" value="normal" id="n20" checked>
+                            <label for="n20">normal</label><br>
+                            <input type="radio" name="bivaly" value="vastag" id="v20">
+                            <label for="v20">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                    <tr>
+                        <td>Carbonara</td>
+                        <td>1850 Ft</td>
+                        <td>
+                            <input type="radio" name="carbonara" value="normal" id="n21" checked>
+                            <label for="n21">normal</label><br>
+                            <input type="radio" name="carbonara" value="vastag" id="v21">
+                            <label for="v21">vastag</label>
+                        </td>
+                        <td><input type="number" value="0" name="mennyiseg"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Egyebek</legend>
+                <div class="row" id="idk">
+                    <div class="col-6">
+                        <h2>Ajándék desszert:</h2>
+                        <div>
+
+                            <input type="radio" name="desszert" value="palacsinta" id="desszert1" checked>
+                            <label for="desszert1">Palacsinta</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="desszert" value="somloigaluska" id="desszert2">
+                            <label for="desszert2"> Somlói galuska</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="desszert" value="kokuszgolyo" id="desszert3">
+                            <label for="desszert3">Kókuszgolyo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="desszert" value="makosguba" id="desszert4">
+                            <label for="desszert4">Mákosguba</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="desszert" value="profiterol" id="desszert5">
+                            <label for="desszert5">Profiterol</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h2>Válassza ki az üditőt(2db)*:</h2>
+                        <div>
+                            <input value="kola" type="checkbox" name="udito">
+                            <label for="udito">Kóla</label>
+                        </div>
+                        <div>
+                            <input value="fanta" type="checkbox" name="udito">
+                            <label for="udito">Fanta</label>
+                        </div>
+                        <div>
+                            <input value="asvanyviz" type="checkbox" name="udito" checked>
+                            <label for="udito">Ásványvíz</label>
+                        </div>
+                        <div>
+                            <input value="narancsle" type="checkbox" name="udito">
+                            <label for="udito">Narancslé</label>
+                        </div>
+                        <div>
+                            <input value="sprite" type="checkbox" name="udito">
+                            <label for="udito">Sprite</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Adatok</legend>
+                <hr>
+
+
+                <h2 id="szallitas">Szállítási adatok</h2>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <label for="nev">Név: </label><br>
+                        <input id="nev" name="nev" type="text" placeholder="Név">
+                    </div>
+                    <div class="col">
+                        <label for="email">Email cím: </label><br>
+                        <input id="email" name="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <label for="cim">Cím </label><br>
+                        <input id="cim" name="cim" type="text" placeholder="Cím">
+                    </div>
+                    <div class="col">
+                        <label for="telefonszam">Telefonszám: </label><br>
+                        <input id="telefonszam" name="telefonszam" type="text" placeholder="Telefonszám">
+                    </div>
+                    <div class="col"></div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <label for="megjegyzes">Megjegyzés: </label>
+                        <textarea name="megjegyzes" id="megjegyzes" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="col"></div>
+
+                </div>
+            </fieldset>
+            <div class="row">
+                
+                <div class="col"></div>
+                <div style="margin-left:6.5%;" class="col">
+                    <input type="submit" value="Elküldés">
+                    <input type="reset" value="Visszaállítás">
+                </div>
+                <div class="col"></div>
+            </div>
+
+
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
