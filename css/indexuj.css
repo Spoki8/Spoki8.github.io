@@ -1,0 +1,67 @@
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 30px;
+}
+
+div#bevezeto {
+    text-align: center;
+    margin-top: 30px;
+}
+
+div.fomenu {
+
+    border: solid black;
+    border-radius: 2px;
+    background-color: coral;
+    
+}
+
+.fomenu:hover {
+    
+    box-shadow: 3px 3px 7px black;
+}
+
+a:active {
+    color: white;
+    text-decoration: unset;
+}
+
+div.aktualis {
+    border-radius: 2px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+div.sor {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 30px;
+}
+
+p#kisbetu {
+    font-size: 12px;
+    text-align: right;
+    padding-top: 20px;
+    position: relative;
+    top: 15px;
+}
+video {
+    position: relative;
+}
+
+img {
+    position: relative;
+    top: 7px;
+}

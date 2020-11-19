@@ -1,0 +1,48 @@
+body {
+    background-color:yellow;
+    background-image: url(../img/pizza-155771_640.png);
+}
+
+header, main, footer {
+    width: 70%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: yellowgreen;
+}
+
+
+.nav{
+    width:65% !important;
+    margin:0px auto;
+    left:0;
+    right:0;
+    padding:0;
+}
+
+.navbar {
+    background-color: grey !important;
+    width: 100 !important;
+}
+
+div.fomenu {
+
+    border: solid black;
+    border-radius: 2px;
+    background-color: coral;
+    
+}
+
+.fomenu:hover {
+    
+    box-shadow: 3px 3px 7px black;
+}
+
+a:active {
+    color: white;
+    text-decoration: unset;
+}
