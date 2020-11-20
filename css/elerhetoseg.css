@@ -5,3 +5,17 @@ h1 {
 h2 {
     margin-top: 20px;
 }
+
+aside {
+    width: 40%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    margin-right: 100px;
+
+}   
+
+body {
+    height: 100%;
+}

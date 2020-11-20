@@ -15,10 +15,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
     <title>Kezdőlap</title>
     <link rel="stylesheet" href="css/alap.css">
     <link rel="stylesheet" href="css/indexuj.css">
-    
+
 </head>
 
 <body>
@@ -26,26 +27,40 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/index.html">PizzaZoo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/index.html">Kezdőlap </a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/étlap.html">Étlap</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="/index.html">Kezdőlap </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/étlap.html">Étlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://facebook.com"><i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://instagram.com"><i class="fab fa-instagram fa-1x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="mailto:pizzazoo@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+                </form>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <h1>Üdvözlünk a PizzaZoo-ban</h1>
@@ -61,7 +76,7 @@
                     szállítási költséget. Ha ezt még nem elég, hétről hétre újabb ajándékkal lepjük meg önöket!
                 </div>
                 <div class="col-xl-6">
-                    <video src="img/Pizza_HD.mp4" controls width="100%" height="100%"></video>
+                    <video poster="/img/video_cover.jpg" src="img/Pizza_HD.mp4" controls width="100%" height="100%"></video>
                 </div>
             </div>
         </div>
@@ -69,60 +84,65 @@
         <h2>Aktuális ajánlatok:</h2>
         <div class="container-fluid">
 
-            <div class="row sor">
-                <div class="col-sm-8 col-md-8 aktualis">
-                    <h3>Napi ajánlat</h3>
-                    <article> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk kedvezményesen Szalámis
-                        pizzát,
-                        ha
-                        minimum kettőt rendel a második féláron az öné lehet.</article>
+            <section>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Napi ajánlat</h3>
+                        <article> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk kedvezményesen
+                            Szalámis
+                            pizzát,
+                            ha
+                            minimum kettőt rendel a második féláron az öné lehet.</article>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure class="figure">
+                            <a href="/img/kep1.jpg">
+                                <img class="img-fluid rounded figure-img" src="img/kep1.jpg" alt="">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
+            </section>
 
-                <div class="col-6 col-md-4">
-                    <figure class="figure">
-                        <a href="/img/kep1.jpg">
-                            <img class="img-fluid rounded figure-img" src="img/kep1.jpg" alt="">
-                        </a>
-                    </figure>
+            <section>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Hozd az egész családot</h3>
+                        <article> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk önöket.
+                            Mindenkit
+                            meghívunk
+                            egy
+                            pohár limonádéra.</article>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure>
+                            <a href="/img/kep2.jpg">
+                                <img class="img-fluid rounded" src="img/kep2.jpg" alt="">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-
-            <div class="row sor">
-                <div class="col-sm-8 col-md-8 aktualis">
-                    <h3>Hozd az egész családot</h3>
-                    <article> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk önöket.
-                        Mindenkit
-                        meghívunk
-                        egy
-                        pohár limonádéra.</article>
+            <section>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Válassz minket és mi megajándékozunk</h3>
+                        <article> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most rendel
+                            tőlünk
+                            megajándékozzuk önt egy desszerttel*.</article>
+                        <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <figure>
+                            <a href="/img/kep3.jpg">
+                                <img class="img-fluid rounded" src="img/kep3.jpg" alt="">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4">
-                    <figure>
-                        <a href="/img/kep2.jpg">
-                            <img class="img-fluid rounded" src="img/kep2.jpg" alt="">
-                        </a>
-                    </figure>
-                </div>
-            </div>
-
-
-            <div class="row sor">
-                <div class="col-sm-8 col-md-8 aktualis">
-                    <h3>Válassz minket és mi megajándékozunk</h3>
-                    <article> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most rendel tőlünk
-                        megajándékozzuk önt egy desszerttel*.</article>
-                    <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók</p>
-                </div>
-                <div class="col-6 col-md-4">
-                    <figure>
-                        <a href="/img/kep3.jpg">
-                            <img class="img-fluid rounded" src="img/kep3.jpg" alt="">
-                        </a>
-                    </figure>
-                </div>
-            </div>
         </div>
+        </section>
 
     </main>
     <footer>
