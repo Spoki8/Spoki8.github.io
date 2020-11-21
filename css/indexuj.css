@@ -12,23 +12,6 @@ div#bevezeto {
     margin-top: 30px;
 }
 
-div.fomenu {
-
-    border: solid black;
-    border-radius: 2px;
-    background-color: coral;
-    
-}
-
-.fomenu:hover {
-    
-    box-shadow: 3px 3px 7px black;
-}
-
-a:active {
-    color: white;
-    text-decoration: unset;
-}
 
 div.aktualis {
     border-radius: 2px;
@@ -44,6 +27,7 @@ div.sor {
 
 h3 {
     margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 article {
@@ -56,6 +40,7 @@ p#kisbetu {
     padding-top: 20px;
     position: relative;
     top: 15px;
+    font-family: sans-serif;
 }
 video {
     position: relative;
@@ -64,4 +49,13 @@ video {
 img {
     position: relative;
     top: 7px;
+}
+
+article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p.bevezeto {
+    font-family: 'Nerko One', cursive;
+    font-size: 120%;
 }

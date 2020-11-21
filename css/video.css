@@ -1,0 +1,28 @@
+html {
+    background-color:yellow;
+    background-image: url(../img/pizza-155771_640.png);
+}
+
+body {
+    width: 70%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: yellowgreen;
+}
+
+
+p.leiras {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+a {
+    font-size: 2em;
+}
