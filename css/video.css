@@ -1,9 +1,13 @@
-html {
-    background-color:yellow;
-    background-image: url(../img/pizza-155771_640.png);
+body {
+    background-image: url(../img/html_hatter7.jpg);
+    height: 100%;
+   background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-body {
+div.oldal {
     width: 70%;
     min-width: 400px;
     max-width: 1000px;
@@ -12,7 +16,8 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding: 10px;
-    background-color: yellowgreen;
+    background-color: RGBA(255, 254, 250, 0.9);
+  
 }
 
 

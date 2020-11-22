@@ -1,3 +1,14 @@
 caption {
     caption-side: top;
 }
+
+h1,details,caption {
+    text-align: center;
+
+}
+
+main {
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}

@@ -30,7 +30,7 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-article {
+p.akcio {
     margin-top: 30px;
 }
 
@@ -44,11 +44,13 @@ p#kisbetu {
 }
 video {
     position: relative;
+    opacity: initial !important;
 }
 
 img {
     position: relative;
     top: 7px;
+    opacity: initial;
 }
 
 article {
@@ -56,6 +58,7 @@ article {
 }
 
 p.bevezeto {
-    font-family: 'Nerko One', cursive;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    
     font-size: 120%;
 }

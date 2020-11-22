@@ -1,3 +1,41 @@
+ h1 udvozles h1
+
+ article  szöveg article
+
+ h2 Aktualis ajanlatok h2 
+
+ article  
+
+    h3 Napi ajanlat h3
+
+        p szoveg p 
+
+  article
+
+  article
+
+  h3 Hozd az egész csaladod h3 
+
+  p szoveg p 
+
+  article 
+
+
+  article 
+
+   h3 valassz miket... h3 
+
+   section
+   p szoveg p 
+
+
+   article 
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -109,15 +147,15 @@
             <h2>Aktuális ajánlatok:</h2>
             <div class="container-fluid">
 
-                <article>
+                <section>
                     <div class="row sor">
                         <div class="col-sm-8 col-md-8 aktualis">
                             <h3>Napi ajánlat</h3>
-                            <p class="akcio"> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk kedvezményesen
+                            <article> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk kedvezményesen
                                 Szalámis
                                 pizzát,
                                 ha
-                                minimum kettőt rendel a második féláron az öné lehet.</p>
+                                minimum kettőt rendel a második féláron az öné lehet.</article>
                         </div>
                         <div class="col-6 col-md-4">
                             <figure class="figure">
@@ -128,17 +166,17 @@
                             </figure>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article>
+                <section>
                     <div class="row sor">
                         <div class="col-sm-8 col-md-8 aktualis">
                             <h3>Hozd az egész családot</h3>
-                            <p class="akcio"> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk önöket.
+                            <article> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk önöket.
                                 Mindenkit
                                 meghívunk
                                 egy
-                                pohár limonádéra.</p>
+                                pohár limonádéra.</article>
                         </div>
                         <div class="col-6 col-md-4">
                             <figure>
@@ -148,16 +186,16 @@
                             </figure>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article>
+                <section>
                     <div class="row sor">
                         <div class="col-sm-8 col-md-8 aktualis">
                             <h3>Válassz minket és mi megajándékozunk</h3>
-                            <p class="akcio"> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most
+                            <article> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most
                                 rendel
                                 tőlünk
-                                megajándékozzuk önt egy desszerttel*.</p>
+                                megajándékozzuk önt egy desszerttel*.</article>
                             <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók
                             </p>
                         </div>
@@ -169,7 +207,7 @@
                             </figure>
                         </div>
                     </div>
-                </article>
+                </section>
             </div>
 
         </main>
@@ -179,3 +217,4 @@
 </body>
 
 </html>
+    

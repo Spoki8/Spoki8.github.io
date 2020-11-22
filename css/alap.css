@@ -1,6 +1,10 @@
 body {
-    background-color:yellow;
-    background-image: url(../img/pizza-155771_640.png);
+    background-image: url(../img/html_hatter7.jpg);
+    height: 100%;
+   background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header, main, footer {
@@ -12,37 +16,14 @@ header, main, footer {
     margin-top: 0;
     margin-bottom: 0;
     padding: 10px;
-    background-color: yellowgreen;
+    background-color: RGBA(255, 254, 250, 0.9);
+  
 }
 
-
-.nav{
-    width:65% !important;
-    margin:0px auto;
-    left:0;
-    right:0;
-    padding:0;
-}
 
 .navbar {
     background-color: grey !important;
     width: 100 !important;
 }
 
-div.fomenu {
 
-    border: solid black;
-    border-radius: 2px;
-    background-color: coral;
-    
-}
-
-.fomenu:hover {
-    
-    box-shadow: 3px 3px 7px black;
-}
-
-a:active {
-    color: white;
-    text-decoration: unset;
-}
