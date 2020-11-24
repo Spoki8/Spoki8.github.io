@@ -17,14 +17,38 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/alap.css">
-  <link rel="stylesheet" href="/css/rendelesuj.css">
+  <script src="scripts/styleswitcher.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/alap.css" title="normal">
+  <link rel="stylesheet" href="/css/rendeles.css">
+  <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+  <link rel="alternate stylesheet" type="text/css" href="css/dark.css" title="dark_css">
 </head>
 
 <body>
+  <nav class="kipozicional">
+    <a href="#tartalom">Ugrás a tartalomra</a>
+  </nav>
   <header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+              <nav><a id="etterem" href="/index.html">BP Pizza</a> </nav>
+          </div>
+          <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+              <nav id="gyengenlato"><a id="nagybetu" href="#"
+                      onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span></a>
+                  <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                          class="ikon"></span></a>
+              </nav>
+          </div>
+      </div>
+  </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/index.html">PizzaZoo</a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,14 +68,23 @@
             <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" target="_blank" href="http://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a class="nav-link" target="_blank" href="http://facebook.com"><i class="fab fa-facebook-square"></i></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" target="_blank" href="http://instagram.com"><i class="fab fa-instagram fa-1x"></i></a>
+            <a class="nav-link" target="_blank" href="http://instagram.com"><i class="fab fa-instagram fa-1x"></i></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" target="_blank" href="mailto:pizzazoo@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a class="nav-link" target="_blank" href="mailto:pizzazoo@gmail.com"><i class="fas fa-envelope"></i></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" id="darkmode" href="#" onclick="setActiveStyleSheet('dark_css'); return false;"><span
+                class="ikon"></span>darkmode</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="lightmode" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                class="ikon"></span>lightmode</a>
+        </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
@@ -64,13 +97,14 @@
 
 
     <h1>Rendelés</h1>
-    <form action="mailto:pizzazoo@gmail.com" method="post" enctype="text/plain">
+    <form action="mailto:pizzazoo@gmail.com" method="post" enctype="text/plain" id="rendeles_form">
       <div class="form-group">
         <p id="utasitas"> <strong>A rendelés menete:</strong> Kérjük, hogy a lenti rendelés részben, írja meg rendelését
           és mi küldünk önnek egy visszaigazoló email-t! Válassza ki az ajándék üditőt, majd adja meg az adatait.</p>
 
         <h2>Rendelés részletei</h2>
-        <textarea class="form-control" name="rendeles" id="rendeles_tartalma" rows="6" placeholder="Ide írja a rendelését!"></textarea>
+        <textarea class="form-control" name="rendeles" id="rendeles_tartalma" rows="6"
+          placeholder="Ide írja a rendelését!"></textarea>
       </div>
 
 
@@ -131,17 +165,17 @@
           <input type="email" class="form-control" name="email" placeholder="Email" id="email">
         </div>
       </div>
-      <div class="form-check">
+      <div class="form-check hirlevel">
         <input class="form-check-input" type="checkbox" value="igen" id="hirlevel" name="hirlevel">
         <label class="form-check-label" for="hirlevel">
-          Feliratkozás a hírlevélvre
+          Feliratkozás a hírlevélre
         </label>
       </div>
 
       <div class="container-fluid">
         <div class="text-center">
-          <button type="submit" class="btn btn-outline-success">Submit</button>
-          <button type="reset" class="btn btn-outline-danger">Reset</button>
+          <button type="submit" class="btn btn-outline-success">Küldés</button>
+          <button type="reset" class="btn btn-outline-danger">Visszaállítás</button>
         </div>
       </div>
 
@@ -150,7 +184,8 @@
 
   </main>
   <footer>
-    <p>Készítette Pethő Márk</p>
+    <p> Készítette Pethő Márk</p>
+    <span><i class="far fa-copyright"></i>2020</span>
   </footer>
 
 

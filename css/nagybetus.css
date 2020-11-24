@@ -1,0 +1,38 @@
+@import url('alap.css');
+
+
+body {
+    font-size: 2em;
+    color: yellow;
+    
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 1300px;
+    background-color: black;
+}
+
+
+a#nagybetu {
+    display: none;
+}
+
+
+a#normalbetu {
+    display: block;
+}
+
+nav#gyengenlato span {
+    background-image: url("../img/ikonkeszlet.png");
+    background-position: -330px 0px;
+}
+
+
+.kipozicional a {position:absolute; left:-9999px;}
+
+.navbar {
+    background-color: black !important;
+    border-style: solid;
+    border-color: yellow;
+}

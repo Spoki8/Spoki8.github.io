@@ -1,0 +1,15 @@
+@import url('alap.css');
+
+
+header, main, footer {
+    background-color: rgb(43, 40, 40);
+    color: white;
+}
+
+#lightmode {
+    display: inline-block;
+}
+
+#darkmode {
+    display: none;
+}

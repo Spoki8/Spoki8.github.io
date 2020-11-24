@@ -1,51 +1,73 @@
-html {
-   background-color: yellow; 
-   background-image: url(/img/pizza-155771_640.png);
-   
+
+h1 {
+    text-align: center;
 }
 
-body {
-    background-color: yellowgreen;
-    width: 80%;
-    max-width: 1000px;
-    min-width: 1000px;
-    margin:20px auto;
-    padding: 15px 20px 20px 20px;
+h2 {
+    margin: 30px;
 }
 
-nav#fomenu {
-    border-radius: 10px;
+div#bevezeto {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+div.aktualis {
+    border-radius: 2px;
+    border-color: black;
     border-style: solid;
-    border-color: yellow;
-    padding: 10px 10px 10px 10px;
-    background-color: yellow;
-      
-}
-a:visited {
-    color: white;
-    text-decoration: unset;
-}
-#fomenupont:hover {
-    
-    box-shadow: 3px 3px 7px black;
     
 }
 
-img#ikon {
-    padding: 0px 0px 0px 0px;
+div.sor {
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
-#fomenupont {
-    margin-left: 1%;
-    margin-bottom: 20px;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    border: solid;
-    border-color:yellowgreen;
-    background-color: yellowgreen;
-    border-radius: 5px;
+h3 {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.akcio {
+    margin-top: 30px;
+}
+
+p#kisbetu {
+    font-size: 12px;
+    text-align: right;
+    padding-top: 20px;
+    position: relative;
+    top: 15px;
+    font-family: sans-serif;
+}
+.video {
+    width:100%;
+    max-width:800px;
+    height:auto;
+  }
+
+img {
+    position: relative;
+    top: 7px;
+    opacity: initial;
     
+    min-width: 30%;
+    min-height: 30%;
+
+}
+
+article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p.bevezeto {
+    font-family: 'Big Shoulders Stencil Display', cursive;
     
+    font-size: 120%;
+}
+
+figcaption a:visited {
+    color: rgb(84, 197, 250);
 }

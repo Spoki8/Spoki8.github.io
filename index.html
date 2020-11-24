@@ -16,7 +16,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
-    <title>Kezdőlap-PizzaZoo</title>
+    <script src="scripts/styleswitcher.js"></script>
+    <title>Kezdőlap - PizzaZoo</title>
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,157 +26,192 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="css/alap.css">
-    <link rel="stylesheet" href="css/indexuj.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/alap.css" title="normal">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <link rel="alternate stylesheet" type="text/css" href="css/dark.css" title="dark_css">
 </head>
 
 <body>
-        <header>        
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="/index.html">PizzaZoo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link " href="/index.html">Kezdőlap </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/rendeles.html">Rendelés <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/étlap.html">Étlap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="http://facebook.com"><i
-                                    class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="http://instagram.com"><i
-                                    class="fab fa-instagram fa-1x"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="mailto:pizzazoo@gmail.com"><i
-                                    class="fas fa-envelope"></i></a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
-                                class="fas fa-search"></i></button>
-                    </form>
+
+    <nav class="kipozicional">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+                    <nav><a id="etterem" href="/index.html">BP Pizza</a> </nav>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <h1>Üdvözlünk a PizzaZoo-ban</h1>
-            <div id="bevezeto" class="container fluid">
-                <div class="row">
-                    <div class="col-xl-6 bevezeto_szoveg align-self-center">
-                        <p class="bevezeto">
-                            Üdvözlőjük pizzázónk weboldalán!
-                            Már több, mint 10 éve készítjük elégedett vendégeinknek a tökéletesebbnél tökéletesebb
-                            pizzát.
-                            Hétről hétre
-                            újabb akciókkal várjuk önöket!
-                            Mostantól online is rendelhetnek tőlünk a rendelés menüponton. Az első hónapban minden
-                            rendelésnél
-                            elengedjük a
-                            szállítási költséget. Ha ezt még nem elég, hétről hétre újabb ajándékkal lepjük meg önöket!
-                        </p>
+                <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+                    <nav id="gyengenlato"><a id="nagybetu" href="#"
+                            onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span></a>
+                        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                                class="ikon"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a style="display: none;" class="navbar-brand" href="/index.html">PizzaZoo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="/index.html">Kezdőlap </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/étlap.html">Étlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://facebook.com"><i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://instagram.com"><i
+                                class="fab fa-instagram fa-1x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="mailto:pizzazoo@gmail.com"><i
+                                class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="darkmode" href="#" onclick="setActiveStyleSheet('dark_css'); return false;"><span
+                            class="ikon"></span>darkmode</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="lightmode" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                            class="ikon"></span>lightmode</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main id="tartalom">
+        <h1>Üdvözlünk a PizzaZoo-ban</h1>
+        <div id="bevezeto" class="container fluid">
+            <div class="row">
+                <div class="col-xl-6 bevezeto_szoveg align-self-center">
+                    <p class="bevezeto">
+                        Üdvözlőjük pizzázónk weboldalán!
+                        Már több, mint 10 éve készítjük elégedett vendégeinknek a tökéletesebbnél tökéletesebb
+                        pizzát.
+                        Hétről hétre
+                        újabb akciókkal várjuk önöket!
+                        Mostantól online is rendelhetnek tőlünk a rendelés menüponton. Az első hónapban minden
+                        rendelésnél
+                        elengedjük a
+                        szállítási költséget. Ha ezt még nem elég, hétről hétre újabb ajándékkal lepjük meg önöket!
+                    </p>
+                </div>
+                <div class="col-xl-6 ">
+                    <figure>
+                        <video class="video" poster="/img/video_cover.jpg" src="img/Pizza_HD.mp4" controls width="463"
+                            height="269"></video>
+                        <figcaption>
+                            <a href="/video.html" class="link">
+                                <u> Ide kattintva elérheti a videó szöveveges leírását!</u>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <h2>Aktuális ajánlatok:</h2>
+        <div class="container-fluid">
+
+            <article>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Napi ajánlat</h3>
+                        <p class="akcio"> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk
+                            kedvezményesen
+                            Szalámis
+                            pizzát,
+                            ha
+                            minimum kettőt rendel a második féláron az öné lehet.</p>
                     </div>
-                    <div class="col-xl-6">
-                        <figure>
-                            <video poster="/img/video_cover.jpg" src="img/Pizza_HD.mp4" controls width="463"
-                                height="269"></video>
-                            <figcaption>
-                                <a href="/video.html" class="link">
-                                    <u> Ide kattintva elérheti a videó szöveveges leírását!</u>
-                                </a>
-                            </figcaption>
+                    <div class="col-6 col-md-4">
+                        <figure class="figure">
+                            <a href="/img/kep1.jpg">
+                                <img class="img-fluid rounded figure-img" src="img/kep1.jpg"
+                                    alt="Pizza a fadeszkán (design)">
+                            </a>
                         </figure>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <h2>Aktuális ajánlatok:</h2>
-            <div class="container-fluid">
-
-                <article>
-                    <div class="row sor">
-                        <div class="col-sm-8 col-md-8 aktualis">
-                            <h3>Napi ajánlat</h3>
-                            <p class="akcio"> Megéhezett a nagy munkában és imádja a húst. Most rendeljen tőlünk kedvezményesen
-                                Szalámis
-                                pizzát,
-                                ha
-                                minimum kettőt rendel a második féláron az öné lehet.</p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <figure class="figure">
-                                <a href="/img/kep1.jpg">
-                                    <img class="img-fluid rounded figure-img" src="img/kep1.jpg"
-                                        alt="Pizza a fadeszkán (design)">
-                                </a>
-                            </figure>
-                        </div>
+            <article>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Hozd az egész családot</h3>
+                        <p class="akcio"> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk
+                            önöket.
+                            Mindenkit
+                            meghívunk
+                            egy
+                            pohár limonádéra.</p>
                     </div>
-                </article>
-
-                <article>
-                    <div class="row sor">
-                        <div class="col-sm-8 col-md-8 aktualis">
-                            <h3>Hozd az egész családot</h3>
-                            <p class="akcio"> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk önöket.
-                                Mindenkit
-                                meghívunk
-                                egy
-                                pohár limonádéra.</p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <figure>
-                                <a href="/img/kep2.jpg">
-                                    <img class="img-fluid rounded" src="img/kep2.jpg" alt="Családi pizzázás (design)">
-                                </a>
-                            </figure>
-                        </div>
+                    <div class="col-6 col-md-4">
+                        <figure>
+                            <a href="/img/kep2.jpg">
+                                <img class="img-fluid rounded" src="img/kep2.jpg" alt="Családi pizzázás (design)">
+                            </a>
+                        </figure>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <article>
-                    <div class="row sor">
-                        <div class="col-sm-8 col-md-8 aktualis">
-                            <h3>Válassz minket és mi megajándékozunk</h3>
-                            <p class="akcio"> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most
-                                rendel
-                                tőlünk
-                                megajándékozzuk önt egy desszerttel*.</p>
-                            <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók
-                            </p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <figure>
-                                <a href="/img/kep3.jpg">
-                                    <img class="img-fluid rounded" src="img/kep3.jpg" alt="Torta desszert (design)">
-                                </a>
-                            </figure>
-                        </div>
+            <article>
+                <div class="row sor">
+                    <div class="col-sm-8 col-md-8 aktualis">
+                        <h3>Válassz minket és mi megajándékozunk</h3>
+                        <p class="akcio"> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most
+                            rendel
+                            tőlünk
+                            megajándékozzuk önt egy desszerttel*.</p>
+                        <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók
+                        </p>
                     </div>
-                </article>
-            </div>
+                    <div class="col-6 col-md-4">
+                        <figure>
+                            <a href="/img/kep3.jpg">
+                                <img class="img-fluid rounded" src="img/kep3.jpg" alt="Torta desszert (design)">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </div>
 
-        </main>
-        <footer>
-            <p>Készítette: Pethő Márk</p>
-        </footer>
+    </main>
+    <footer>
+        <p>Készítette: Pethő Márk</p>
+        <span><i class="far fa-copyright"></i>2020</span>
+    </footer>
 </body>
 
 </html>
