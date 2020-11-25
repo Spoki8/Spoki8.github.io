@@ -48,8 +48,9 @@ a#normalbetu {display: none;}
 
 @media print {
     nav {display: none;}
-    body {width: 100%;}
+    body {width: 100%;margin: 0px,0px;}
     footer {display: none;}
+    
 }
 
 nav a#etterem {
