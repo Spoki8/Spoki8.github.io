@@ -12,3 +12,7 @@ main {
     padding-right: 3%;
     
 }
+
+details, caption {
+    font-size: 23px;  /* Ezt raktam be most */
+}

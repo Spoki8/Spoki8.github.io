@@ -22,10 +22,12 @@ header, main, footer {
 
 
 .navbar {
-    background-color: grey !important;
+    background-color: rgb(20, 20, 20) !important;   /* Szint és radiust greyröl */
+    border-radius: 5px !important;
+   
 }
 
-.kipozicional a {position:absolute; left:-9999px;}
+.kipozicional a {position:absolute; left:-9999px; color: purple ;}
 
 
 
@@ -50,6 +52,7 @@ a#normalbetu {display: none;}
     nav {display: none;}
     body {width: 100%;margin: 0px,0px;}
     footer {display: none;}
+    video {display: none;}
     
 }
 
