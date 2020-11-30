@@ -24,4 +24,11 @@ div.hirlevel {
     margin-top: 10px;
 }
 
+
+.btn-succes-new {
+    background-color: green !important;
+    border-color: green;
+    color: white;
+}
+
 /* btn-outline-succes */

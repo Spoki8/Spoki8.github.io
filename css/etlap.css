@@ -16,3 +16,9 @@ main {
 details, caption {
     font-size: 23px;  /* Ezt raktam be most */
 }
+
+
+summary, p {
+    color: rgb(82, 76, 76);
+    
+}

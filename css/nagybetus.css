@@ -26,8 +26,11 @@ a#normalbetu {
 nav#gyengenlato span {
     background-image: url("../img/ikonkeszlet.png");
     background-position: -330px 0px;
+    background-color: rgb(201, 201, 201);
+    border-style: solid;
+    border-color: rgb(201, 201, 201);
+    border-radius: 5px;
 }
-
 
 .kipozicional a {position:absolute; left:-9999px;}
 

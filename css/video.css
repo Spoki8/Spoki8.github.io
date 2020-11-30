@@ -31,3 +31,16 @@ p.leiras {
 a {
     font-size: 2em;
 }
+
+.link:link {
+    color: rgb(40, 122, 19);
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: rgb(255, 0, 255);
+}
+
+.link:hover {
+    color: blue;
+}

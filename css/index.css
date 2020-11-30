@@ -46,12 +46,12 @@ p#kisbetu {
     width:100%;
     max-width:800px;
     height:auto;
+    border-radius: 5px;
   }
 
 img {
     position: relative;
     top: 7px;
-    opacity: initial;
     
     min-width: 30%;
     min-height: 30%;
@@ -70,7 +70,7 @@ p.bevezeto {
 }
 
 .link:link {
-    color: rgb(0, 0, 255);
+    color: rgb(40, 122, 19);
     text-decoration: underline;
 }
 
@@ -78,4 +78,7 @@ p.bevezeto {
     color: rgb(255, 0, 255);
 }
 
+.link:hover {
+    color: blue;
+}
 
