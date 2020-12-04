@@ -1,30 +1,88 @@
-@import url('alap.css');
-
-body {
-    font-size: 2em;
+h1 {
+    text-align: center;
 }
 
-header, main, footer, div.oldal {
-    width: 90%;
-    max-width: 1300px;
+h2 {
+    margin: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+    font-size: 180%;
+}
+
+div#bevezeto {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+div.aktualis {
+    border-radius: 2px;
+    border-color: black;
+    border-style: solid;
     
 }
 
-a#nagybetu {
-    display: none;
+div.sor {
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
-
-a#normalbetu {
-    display: block;
+p.akcio {
+    margin-top: 30px;
+    font-family: 'Kalam', cursive;
+    font-size: 120%;
 }
 
-nav#gyengenlato span {
-    background-image: url("../img/ikonkeszlet.png");
-    background-position: -330px 0px;
+p#kisbetu {
+    font-size: 75%;
+    text-align: right;
+    padding-top: 3px;
+    position: relative;
+    top: 15px;
+    font-family: sans-serif;
+}
+video {
+    position: relative;
+    width:100%;
+    max-width:800px;
+    height:auto;
+    border-radius: 5px;
+  }
+
+img {
+    position: relative;
+    top: 7px;
     
-
+    min-width: 30%;
+    min-height: 30%;
+    
 }
 
-.kipozicional a {position:absolute; left:-9999px;}
- 
+p.bevezeto {
+    font-family: 'Kalam', cursive;
+    
+    font-size: 125%;
+}
+
+.link:link {
+    color: rgb(34, 43, 255);
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: rgb(152, 66, 157);
+    
+}
+
+div figure a:link {
+    color: rgb(34, 43, 255);
+}
+
+
+div figure a:visited {
+    color: rgb(152, 66, 157);
+}

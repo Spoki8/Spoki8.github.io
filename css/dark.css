@@ -53,3 +53,22 @@ hr {
     color: wheat;
     background-color: white;
 }
+
+.link:link {
+    color: rgb(250, 192, 2);
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: rgb(255, 218, 5);
+    
+}
+
+div figure a:link {
+    color: rgb(250, 192, 2);
+}
+
+
+div figure a:visited {
+    color: rgb(255, 218, 5);
+}

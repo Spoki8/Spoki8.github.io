@@ -31,6 +31,10 @@ section {
     margin-bottom: 40px;
 }
 
-aside figure a {
-    color: green;
+aside figure a:link {
+    color: rgb(34, 43, 255);
+}
+
+aside figure:visited {
+    color: rgb(152, 66, 157);
 }

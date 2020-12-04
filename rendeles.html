@@ -96,51 +96,51 @@
     </div>
 </nav>
   </header>
-  <main>
+  <main id="tartalom">
 
 
     <h1>Rendelés</h1>
     <form action="mailto:pizzazoo@gmail.com" method="post" enctype="text/plain" id="rendeles_form">
       <div class="form-group">
-        <p id="utasitas"> A rendelés menete: Kérjük, hogy a lenti rendelés részben, írja meg rendelését
-          és mi küldünk önnek egy visszaigazoló email-t! Válassza ki az ajándék üditőt, majd adja meg az adatait.</p>
+        <p id="utasitas"> A rendelés menete: Kérjük, hogy a lenti rendelés részben írja meg rendelését,
+          majd mi küldünk Önnek egy visszaigazoló email-t! Válassza ki az ajándék üdítőt, majd adja meg az adatait!</p>
 
         <h2>Rendelés részletei</h2>
         <textarea class="form-control" name="rendeles" id="rendeles_tartalma" rows="6"
-          placeholder="Ide írja a rendelését!"></textarea>
+          placeholder="Ide írja a rendelését!" required></textarea>
       </div>
 
 
-      <h2>Ajándék üditő</h2>
-      <fieldset class="uditok">
+      <h2>Ajándék desszert</h2>
+      <fieldset class="desszertek">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="ital" value="asvanyviz" id="asvanyviz" checked>
-          <label class="form-check-label" for="asvanyviz">
-            Ásványvíz
+          <input class="form-check-input" type="radio" name="desszert" value="profitterol" id="profitterol" checked>
+          <label class="form-check-label" for="profitterol">
+            Profitterol
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="ital" value="cola" id="cola">
-          <label class="form-check-label" for="cola">
-            Cola
+          <input class="form-check-input" type="radio" name="desszert" value="kokuszgolyo" id="kokuszgolyo">
+          <label class="form-check-label" for="kokuszgolyo">
+            Kókuszgolyó
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="ital" value="fanta" id="fanta">
-          <label class="form-check-label" for="fanta">
-            Fanta
+          <input class="form-check-input" type="radio" name="desszert" value="tiramisu" id="tiramisu">
+          <label class="form-check-label" for="tiramisu">
+            Tiramisu
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="ital" value="narancsle" id="narancsle">
-          <label class="form-check-label" for="narancsle">
-            Narancslé
+          <input class="form-check-input" type="radio" name="desszert" value="makos_guba" id="makos_guba">
+          <label class="form-check-label" for="makos_guba">
+            Mákosguba
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="ital" value="sprite" id="sprite">
-          <label class="form-check-label" for="sprite">
-            Sprite
+          <input class="form-check-input" type="radio" name="desszert" value="almaspite" id="almaspite">
+          <label class="form-check-label" for="almaspite">
+            Almás pite
           </label>
         </div>
       </fieldset>
@@ -150,26 +150,26 @@
       <div class="row">
         <div class="col">
           <label for="nev">Név:</label>
-          <input type="text" class="form-control" name="nev" placeholder="Név" id="nev">
+          <input type="text" class="form-control" name="nev" placeholder="Név" id="nev" required>
         </div>
         <div class="col">
           <label for="cim">Cím:</label>
-          <input type="text" class="form-control" name="cim" placeholder="Cím" id="cim">
+          <input type="text" class="form-control" name="cim" placeholder="Cím" id="cim" required>
         </div>
       </div>
 
-      <div class="row">
+      <div id="szalliats_sor2" class="row">
         <div class="col">
           <label for="telefonszam">Telefonszám:</label>
-          <input type="text" class="form-control" name="telefonszam" placeholder="Telefonszám" id="telefonszam">
+          <input type="tel" class="form-control" name="telefonszam" placeholder="06301234567" id="telefonszam" maxlength="11" required>
         </div>
         <div class="col">
           <label for="email">Email cím:</label>
-          <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+          <input type="email" class="form-control" name="email" placeholder="Email" id="email" required>
         </div>
       </div>
       <div class="form-check hirlevel">
-        <input class="form-check-input" type="checkbox" value="igen" id="hirlevel" name="hirlevel">
+        <input class="form-check-input" type="checkbox" value="igen" id="hirlevel" name="hirlevel" >
         <label class="form-check-label" for="hirlevel">
           Feliratkozás a hírlevélre
         </label>
@@ -177,9 +177,10 @@
 
       <div class="container-fluid">
         <div class="text-center">
-          <button type="submit" class="btn btn-succes-new">Küldés</button>
-          <button type="reset" class="btn btn-danger">Visszaállítás</button>  
+          <button type="submit" class="btn btn-primary-new">Küldés</button>
+          <button type="reset" class="btn btn-danger-new">Visszaállítás</button>  
         </div>
+
       </div>
 
     </form>

@@ -25,12 +25,22 @@ div.hirlevel {
 }
 
 
-.btn-succes-new {
-    background-color: green !important;
-    border-color: green;
+.btn-danger-new {
+    background-color:rgb(100, 100, 100) !important;
+    border-color:rgb(100, 100, 100);
+    color: white;
+}
+
+.btn-primary-new {
+    background-color:blue !important;
+    border-color:blue;
     color: white;
 }
 
 p#utasitas {
     font-family: 'Quicksand', sans-serif;
+}
+
+#szalliats_sor2 {
+    margin-top: 11px;
 }

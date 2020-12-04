@@ -33,15 +33,11 @@ a {
 }
 
 .link:link {
-    color: rgb(40, 122, 19);
+    color: rgb(34, 43, 255);
     text-decoration: underline;
 }
 
 .link:visited {
-    color: red;
+    color: rgb(152, 66, 157);
     
-}
-
-.link:hover {
-    color: blue;
 }
