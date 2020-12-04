@@ -14,11 +14,16 @@ main {
 }
 
 details, caption {
-    font-size: 23px;  /* Ezt raktam be most */
+    font-size: 30px; 
 }
 
 
-summary, p {
-    color: rgb(82, 76, 76);
+caption summary, caption p {
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
     
+}   
+
+thead {
+    font-size: 125%;
 }

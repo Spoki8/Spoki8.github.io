@@ -7,6 +7,13 @@ h2 {
     margin: 30px;
 }
 
+h3 {
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+    font-size: 180%;
+}
+
 div#bevezeto {
     text-align: center;
     margin-top: 30px;
@@ -25,26 +32,22 @@ div.sor {
     padding-top: 30px;
 }
 
-h3 {
-    margin-top: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 p.akcio {
     margin-top: 30px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 22px;
+    font-family: 'Kalam', cursive;
+    font-size: 120%;
 }
 
 p#kisbetu {
-    font-size: 12px;
+    font-size: 75%;
     text-align: right;
-    padding-top: 20px;
+    padding-top: 3px;
     position: relative;
     top: 15px;
     font-family: sans-serif;
 }
-.video {
+video {
+    position: relative;
     width:100%;
     max-width:800px;
     height:auto;
@@ -58,17 +61,12 @@ img {
     min-width: 30%;
     min-height: 30%;
     
-
-}
-
-article {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p.bevezeto {
-    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-family: 'Kalam', cursive;
     
-    font-size: 120%;
+    font-size: 125%;
 }
 
 .link:link {
@@ -77,10 +75,14 @@ p.bevezeto {
 }
 
 .link:visited {
-    color: rgb(255, 0, 255);
+    color: red;
+    
 }
 
 .link:hover {
     color: blue;
 }
 
+div figure a {
+    color: green;
+}

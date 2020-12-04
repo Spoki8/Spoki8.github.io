@@ -38,7 +38,8 @@ a {
 }
 
 .link:visited {
-    color: rgb(255, 0, 255);
+    color: red;
+    
 }
 
 .link:hover {

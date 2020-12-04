@@ -1,7 +1,7 @@
 @import url('alap.css');
 
 
-header, main, footer {
+header, main, footer, div.oldal {
     background-color: rgb(43, 40, 40);
     color: white;
 }
@@ -12,4 +12,44 @@ header, main, footer {
 
 #darkmode {
     display: none;
+}
+
+
+a:link {
+    color: rgb(65, 162, 67);
+}
+
+.kipozicional a {
+    color: black;
+}
+
+.link:link {
+    color: rgb(65, 162, 67);
+    text-decoration: underline;
+}
+
+aside figure figcaption.figure-caption {
+    color: white;
+}
+
+nav#gyengenlato span {
+
+        background-color: rgb(201, 201, 201);
+        border-style: solid;
+        border-color: rgb(201, 201, 201);
+        border-radius: 5px;
+        padding-right: 60px;
+}
+
+table.table-light {
+    background-color: rgb(33, 36, 41) !important;
+}
+
+caption summary, caption p {
+    color: white;
+       
+}   
+hr {
+    color: wheat;
+    background-color: white;
 }

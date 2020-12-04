@@ -19,8 +19,7 @@
     <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
     <script src="scripts/styleswitcher.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Darker+Grotesque:wght@500&family=Kalam&family=Nerko+One&family=Quicksand:wght@600&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/alap.css" title="normal">
     <link rel="stylesheet" href="/css/etlap.css">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
@@ -36,10 +35,10 @@
        
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <nav><a id="etterem" href="/index.html">BP Pizza</a> </nav>
                 </div>
-                <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <nav id="gyengenlato"><a id="nagybetu" href="#"
                             onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span></a>
                         <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
@@ -49,15 +48,15 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">   
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/index.html">Kezdőlap </a>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/index.html">Kezdőlap </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
@@ -81,18 +80,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="darkmode" href="#" onclick="setActiveStyleSheet('dark_css'); return false;"><span
-                            class="ikon"></span>darkmode</a>
+                            class="ikon"></span>sötét mód be</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" id="lightmode" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
-                            class="ikon"></span>lightmode</a>
+                            class="ikon"></span>sötét mód ki </a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
                             class="fas fa-search"></i></button>
+
                 </form>
             </div>
         </nav>
@@ -102,7 +102,7 @@
     <main>
         <h1>Étlap</h1>
 
-        <table class="table table-striped table-dark table-hover">
+        <table class="table table-light table-hover ">
             <caption>
                 <strong>Éttermünk étlapja</strong>
 
@@ -111,7 +111,7 @@
                     <p> A táblázatban megtekinthető az éttermi kínálatunk!</p>
                 </details>
             </caption>
-            <thead>
+            <thead class="thead-dark">
                 <tr>
                     <th scope="col">Pizza </th>
                     <th scope="col">Feltétek </th>
@@ -124,8 +124,8 @@
                 <td>1510 Ft</td>
             </tr>
             <tr>
-                <th scope="row">Sonkás Pizza</th>
-                <td>paradicsomszósz, dupla mozzarella, sonka</td>
+                <th scope="row">Szalámis Pizza</th>
+                <td>paradicsomszósz, dupla mozzarella, szalámi</td>
                 <td>1610 Ft</td>
             </tr>
             <tr>
@@ -226,8 +226,8 @@
         </table>
     </main>
     <footer>
-        <p> Készítette Pethő Márk</p>
-        <span><i class="far fa-copyright"></i>2020</span>
+        <hr>
+        <p lang="en">Copyright <i class="far fa-copyright"></i> 2020 BP Pizza <br> Designed by CK7DPI </p>
     </footer>
 
 </html>

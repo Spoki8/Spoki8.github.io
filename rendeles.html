@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Értékelés - BP Pizza</title>
+  <title>Rendelés - BP Pizza</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
   <script src="scripts/styleswitcher.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Darker+Grotesque:wght@500&family=Kalam&family=Nerko+One&family=Quicksand:wght@600&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/alap.css" title="normal">
   <link rel="stylesheet" href="/css/rendeles.css">
   <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
@@ -47,50 +47,54 @@
       </div>
   </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item ">
-            <a class="nav-link" href="/index.html">Kezdőlap </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link " href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/étlap.html">Étlap</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="http://facebook.com"><i class="fab fa-facebook-square"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="http://instagram.com"><i class="fab fa-instagram fa-1x"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="http://youtube.com"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="darkmode" href="#" onclick="setActiveStyleSheet('dark_css'); return false;"><span
-                class="ikon"></span>darkmode</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/index.html">Kezdőlap </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/étlap.html">Étlap</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="http://facebook.com"><i
+                        class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="http://instagram.com"><i
+                        class="fab fa-instagram fa-1x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="darkmode" href="#" onclick="setActiveStyleSheet('dark_css'); return false;"><span
+                    class="ikon"></span>sötét mód be</a>
+            </li>
 
-        <li class="nav-item">
-            <a class="nav-link" id="lightmode" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
-                class="ikon"></span>lightmode</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" id="lightmode" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                    class="ikon"></span>sötét mód ki </a>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
+                    class="fas fa-search"></i></button>
+
         </form>
-      </div>
-    </nav>
+    </div>
+</nav>
   </header>
   <main>
 
@@ -98,7 +102,7 @@
     <h1>Rendelés</h1>
     <form action="mailto:pizzazoo@gmail.com" method="post" enctype="text/plain" id="rendeles_form">
       <div class="form-group">
-        <p id="utasitas"> <strong>A rendelés menete:</strong> Kérjük, hogy a lenti rendelés részben, írja meg rendelését
+        <p id="utasitas"> A rendelés menete: Kérjük, hogy a lenti rendelés részben, írja meg rendelését
           és mi küldünk önnek egy visszaigazoló email-t! Válassza ki az ajándék üditőt, majd adja meg az adatait.</p>
 
         <h2>Rendelés részletei</h2>
@@ -183,8 +187,8 @@
 
   </main>
   <footer>
-    <p> Készítette Pethő Márk</p>
-    <span><i class="far fa-copyright"></i>2020</span>
+    <hr>
+    <p lang="en">Copyright <i class="far fa-copyright"></i> 2020 BP Pizza <br> Designed by CK7DPI </p>
   </footer>
 
 
