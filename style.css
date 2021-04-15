@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+    
+/* Tabla*/
+#tabla {
+    position: fixed;
+    top: 13rem;
+    left: 5%;
+    width: 550px;
+    height: 500px;
+    padding: 1.5rem;
+    background-color: blue;
+    border: black 1px solid;
+    visibility: hidden;
+   
+}
+
+.ures {
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 50px;
+}
+
+/* pre_game_menu*/
+
+
+#menu {
+    border: solid black 1px;
+    margin-left: 8%;
+    margin-right: 50%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    visibility: visible;
+}
+
+/* In_game menu */
+#tablamenu {
+    position: fixed;
+    left: 1%;
+    top: 1rem;
+    border: solid black 1px;
+    width:625px;
+    display: inline-flex;  /*inline-flex */
+    visibility: hidden;
+}
+
+.piros_korong {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: black solid 1px;
+    border-radius: 50px;
+}
+
+.sarga_korong {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: black solid 1px;
+    border-radius: 50px;
+}
+
+.kovetkezo_korong {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: black solid 1px;
+    border-radius: 50px;
+}
+
+#player2 {
+    margin-left: 8rem;
+   
+}
+
+#player1 {
+    margin-left: 6rem;
+}
+
+#kovetkezo_jatekos {
+   margin-left: 8rem;
+}
+
+
+/* lebego korong */
+.selected_korong {
+    width: 66px;
+    height: 66px;
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 50px;
+    visibility: visible;
+}
+
+
+.dobas_helye {
+    
+    position: fixed; /* fixed */ 
+    top: 6.5rem;
+    left: 5%;   /* 5% */
+    width: 550px;
+    height: 100px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+table#dobas_helye td {
+    height: 100%;
+}
+
+
+/* Winner alert */
+
+div#winner {
+    position: absolute;
+    left: 5%;
+    top: 5rem;
+    border: black solid 1px;
+    background-color: coral;
+    font-size: 35px;
+    width: 550px;
+    text-align: center;
+    
+    visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}

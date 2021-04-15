@@ -3,196 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c3570117ae.js" crossorigin="anonymous"></script>
-    <script src="scripts/styleswitcher.js"></script>
-    <title>Kezdőlap - BP Pizza</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Darker+Grotesque:wght@500&family=Kalam&family=Nerko+One&family=Quicksand:wght@600&family=Rajdhani:wght@700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/alap.css" title="normal">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
-    <link rel="alternate stylesheet" type="text/css" href="css/dark.css" title="dark_css">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
 </head>
 
 <body>
-
-    <nav class="kipozicional">
-        <a href="#tartalom">Ugrás a tartalomra</a>
-    </nav>
-    <header>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <nav><a id="etterem" href="/index.html">BP Pizza</a> </nav>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <nav id="gyengenlato"><a id="nagybetu" href="#"
-                            onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span></a>
-                        <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
-                                class="ikon"></span></a>
-                    </nav>
-
-                </div>
-            </div>
+    <div id="menu">
+        <h1>Connect four</h1>
+        <div>
+            <label for="jatekos_1">Add meg az első játékos nevét</label><br>
+            <input id="jatekos_1" type="text" value="1.Játékos">
         </div>
-
-
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link " href="/index.html">Kezdőlap </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/rendeles.html">Rendelés <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/étlap.html">Étlap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/elerhetoseg.html">Elérhetőség</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="http://facebook.com"><i
-                                class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="http://instagram.com"><i
-                                class="fab fa-instagram fa-1x"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="http://youtube.com"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="darkmode" href="#"
-                            onclick="setActiveStyleSheet('dark_css'); return false;"><span class="ikon"></span>sötét mód be</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="lightmode" href="#"
-                            onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>sötét mód ki </a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
-                            class="fas fa-search"></i></button>
-
-                </form>
-            </div>
-        </nav>
-    </header>
-    <main id="tartalom">
-        <h1>Kezdőlap</h1>
-        <div id="bevezeto" class="container fluid">
-            <div class="row">
-                <div class="col-xl-6 bevezeto_szoveg align-self-center">
-                    <p class="bevezeto">
-                        Üdvözöljük pizzázónk weboldalán!
-                        Már több, mint 10 éve készítjük elégedett vendégeink számára a tökéletesebbnél tökéletesebb
-                        pizzát.
-                        Hétről hétre
-                        újabb akciókkal várjuk Önöket!
-                        Mostantól online is rendelhetnek tőlünk a rendelés menüponton. Az első hónapban minden
-                        rendelésnél
-                        elengedjük a
-                        szállítási költséget. Ha ez még nem elég, hétről hétre újabb ajándékkal lepjük meg Önöket!
-
-                    </p>
-                </div>
-                <div class="col-xl-6 ">
-                    <figure>
-                        <video poster="/img/video_cover.jpg" src="img/Pizza_HD.mp4" controls width="463"
-                            height="269"></video>
-                        <figcaption>
-                            <a href="/video.xhtml" class="link">
-                                <p class="link">Ide kattintva elérheti a videó szöveges leírását!</p>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
+        <div>
+            <label for="jatekos_2">Add meg az második játékos nevét</label><br>
+            <input id="jatekos_2" type="text" value="2.Játékos">
         </div>
-
-        <h2>Aktuális ajánlatok</h2>
-        <div class="container-fluid">
-
-            <article>
-                <div class="row sor">
-                    <div class="col-sm-8 col-md-8 aktualis">
-                        <h3>Napi ajánlat</h3>
-                        <p class="akcio"> Megéhezett a nagy munkában és imádja a húst? Most rendeljen tőlünk
-                            kedvezményesen Szalámis pizzát! Ha minimum kettőt rendel, a második féláron az Öné lehet.</p>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <figure class="figure">
-                            <a href="/img/kep1.jpg" target="_blank">
-                                <img class="img-fluid rounded figure-img" src="img/kep1.jpg"
-                                    alt="Pizza a fadeszkán illusztráció">
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                <div class="row sor">
-                    <div class="col-sm-8 col-md-8 aktualis">
-                        <h3>Hozd az egész családot!</h3>
-                        <p class="akcio"> Jöjjenek el hozzánk ezen a héten az egész családdal és mi megajándékozzuk
-                            Önöket. Mindenkit meghívunk egy pohár limonádéra!</p>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <figure>
-                            <a href="/img/kep2.jpg" target="_blank">
-                                <img class="img-fluid rounded" src="img/kep2.jpg" alt="Családi pizzázás illusztráció">
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </article>
-
-            <article>
-                <div class="row sor">
-                    <div class="col-sm-8 col-md-8 aktualis">
-                        <h3>Válassz minket és mi megajándékozunk!</h3>
-                        <p class="akcio"> Elindult online rendelésünk is, amit ajándékokkal ünneplünk. Amennyiben most
-                            rendel tőlünk megajándékozzuk Önt egy desszerttel*.</p>
-                        <p id="kisbetu">*: az ajándékban kapható desszertek a rendelés menüpont alatt megtalálhatók
-                        </p>
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <figure>
-                            <a href="/img/kep3.jpg" target="_blank">
-                                <img class="img-fluid rounded" src="img/kep3.jpg" alt="Torta desszert illusztráció">
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </article>
+        <div>
+            <a target="_blank" href="https://hu.wikipedia.org/wiki/Connect_four">
+                <p>A játékszabályzatot ide kattintva elolvashatod!</p>
+            </a>
         </div>
+        <button id="start">Start</button>
+    </div>
+    
+    <table id="dobas_helye" class="visually-hidden">
+        <tr>
+            <td class="oszlop0"><div class="selected_korong"></div></td>
+            <td class="oszlop1"><div class="selected_korong"></div></td>
+            <td class="oszlop2"><div class="selected_korong"></div></td>
+            <td class="oszlop3"><div class="selected_korong"></div></td>
+            <td class="oszlop4"><div class="selected_korong"></div></td>
+            <td class="oszlop5"><div class="selected_korong"></div></td>
+            <td class="oszlop6"><div class="selected_korong"></div></td>
+        </tr>
+    </table>
+    <div id="tabla">
+        <table id="tablazat">
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+            <tr>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+                <td class="ures"></td>
+            </tr>
+        </table>
 
-    </main>
-    <footer>
-        <hr>
-        <p lang="en">Copyright <i class="far fa-copyright"></i> 2020 BP Pizza <br> Designed by CK7DPI</p>
-    </footer>
+
+
+
+    </div>
+    <div id="tablamenu">
+        <div id="player1">
+            <div id="player1_name"></div>
+            <div class="piros_korong"></div>
+        </div>
+        <div id="kovetkezo_jatekos">
+            <div>Következő:</div>
+            <div class="kovetkezo_korong"></div>
+        </div>
+        <div id="player2">
+            <div id="player2_name"></div>
+            <div class="sarga_korong"></div>
+        </div>
+    </div>
+
+    <div id="winner">
+    
+    </div>
+    <script src="/connect_four/js/billentyu.js"></script>
+    <script src="/connect_four/js/hover_korong.js"></script>
+    <script src="/connect_four/js/berakas.js"></script>
+    <script src="/connect_four/js/main.js"></script>
+    <script src="/connect_four/js/win_check.js"></script>
+    <script src="/connect_four/js/animacio.js   "></script>
+    <script src="/connect_four/js/winner_alert.js"></script>
+    <script src="/connect_four/js/eredmeny_mentes.js"></script>
 </body>
 
 </html>
