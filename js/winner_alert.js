@@ -19,6 +19,12 @@ function winner_alert(){
         ujJatek.className = "returnmenu"
         winnertextDiv.appendChild(ujJatek)
         winnertextDiv.style.visibility = "visible"
+        if (currentPlayer == "piros"){
+            winnertextDiv.style.backgroundColor = "red"
+        }
+        else{
+            winnertextDiv.style.backgroundColor = "yellow"
+        }   
 
         const Menugomb = document.querySelector(".returnmenu")
         Menugomb.addEventListener("click", visszaMenube)

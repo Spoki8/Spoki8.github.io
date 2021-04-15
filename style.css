@@ -25,7 +25,14 @@
 }
 
 /* pre_game_menu*/
+input{
+    height: 2rem;
+    font-size: 1.5rem;
+}
 
+h1 {
+    font-size: 2.5rem;
+}
 
 #menu {
     border: solid black 1px;
@@ -34,8 +41,35 @@
     padding-top: 1rem;
     padding-left: 1rem;
     visibility: visible;
+    background-color:lightblue ;
+    
 }
 
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+label {
+    font-size: 1.5rem;
+}
+
+input#jatekos_1 {
+    background-color: red;
+    margin-bottom: 1rem;
+}
+
+input#jatekos_2 {
+    background-color: yellow;
+}
 /* In_game menu */
 #tablamenu {
     position: fixed;
@@ -45,6 +79,7 @@
     width:625px;
     display: inline-flex;  /*inline-flex */
     visibility: hidden;
+    background-color:lightblue ;
 }
 
 .piros_korong {
@@ -98,9 +133,9 @@
 
 .dobas_helye {
     
-    position: fixed; /* fixed */ 
+    position: fixed;
     top: 6.5rem;
-    left: 5%;   /* 5% */
+    left: 5%; 
     width: 550px;
     height: 100px;
     padding-left: 1.5rem;
@@ -135,4 +170,19 @@ div#winner {
   width:    1px;
   height:   1px;
   overflow: hidden;
+}
+
+
+.returnmenu {
+    
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
 }
