@@ -1,6 +1,7 @@
 
 
 const startGomb = document.querySelector("#start")
+const EgyjatekosGomb = document.querySelector("#egyjatekos")
 const menu = document.querySelector("#menu")
 const tabla = document.querySelector("#tabla")
 const tablazat = document.querySelector("#tablazat")
@@ -25,6 +26,8 @@ const player2Name = document.querySelector("#jatekos_2")
 const eredmeny = document.querySelector("#eredmeny")
 // start 
 startGomb.addEventListener("click", inditas)
+EgyjatekosGomb.addEventListener("click", inditasEgyjatekos)
+
 
 
 function inditas() {
@@ -32,27 +35,37 @@ function inditas() {
    tabla.style.visibility = "visible"
    selectedKorong.style.visibility = "visible"
    tablamenu.style.visibility = "visible"
-    game = true
+   game = true
+   SINGLE = false
 
    dobasHelye.className = "dobas_helye"
    getPlayersName()
 }
+
+function inditasEgyjatekos() {
+    menu.style.visibility = "hidden"
+    tabla.style.visibility = "visible"
+    selectedKorong.style.visibility = "visible"
+    tablamenu.style.visibility = "visible"
+    game = true
+    SINGLE = true
+ 
+    dobasHelye.className = "dobas_helye"
+    getPlayersName()
+    document.querySelector("#player2_name").innerHTML = "Bot"
+ }
 
 function visszaMenube(){
    location.reload()
 
 }
 
-
 function getPlayersName(){
     document.querySelector("#player1_name").innerHTML = player1Name.value
     document.querySelector("#player2_name").innerHTML = player2Name.value
 }
 
-
-
 // tabla
-
 
 const tablazat_matrix = [ 
  [null, null, null, null, null, null, null],

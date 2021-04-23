@@ -6,19 +6,42 @@ var billentyuoszlop = -1
 window.addEventListener('keydown', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if (billentyuoszlop >=0 && 7>= billentyuoszlop && game == true){
+            if (billentyuoszlop >=0 && 7>= billentyuoszlop && game == true && SINGLE == false){
                 billentyuoszlop--
             };
             nyomas();
             break;
         case 'ArrowRight':
-            if (billentyuoszlop >=-1 && 6>= billentyuoszlop && game == true){
+            if (billentyuoszlop >=-1 && 6>= billentyuoszlop && game == true  && SINGLE == false){
                 billentyuoszlop++
             };
             nyomas();
             break;
         case 'Enter':
-            if(win == false && dontetlen == false && game == true){
+            if(win == false && dontetlen == false && game == true  && SINGLE == false){
+                billentyudobas()
+            };
+            break;
+    }
+}); 
+
+
+window.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            if (billentyuoszlop >=0 && 7>= billentyuoszlop && game == true && SINGLE == true && currentPlayer == "piros"){
+                billentyuoszlop--
+            };
+            nyomas();
+            break;
+        case 'ArrowRight':
+            if (billentyuoszlop >=-1 && 6>= billentyuoszlop && game == true && SINGLE == true && currentPlayer == "piros"){
+                billentyuoszlop++
+            };
+            nyomas();
+            break;
+        case 'Enter':
+            if(win == false && dontetlen == false && game == true && SINGLE == true && currentPlayer == "piros"){
                 billentyudobas()
             };
             break;

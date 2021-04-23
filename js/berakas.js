@@ -10,6 +10,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[0].style.backgroundColor = "red"}, 600) 
             winChecking(5,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][0] = "Y"
@@ -30,6 +34,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[0].style.backgroundColor = "red"}, 500) 
             winChecking(4,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][0] = "Y"
@@ -51,6 +59,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[0].style.backgroundColor = "red"}, 400) 
             winChecking(3,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][0] = "Y"
@@ -72,6 +84,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[0].style.backgroundColor = "red"}, 300) 
             winChecking(2,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][0] = "Y"
@@ -93,6 +109,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[0].style.backgroundColor = "red"}, 200) 
             winChecking(1,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][0] = "Y"
@@ -113,6 +133,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[0].style.backgroundColor = "red"
             winChecking(0,0)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][0] = "Y"
@@ -141,6 +165,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[1].style.backgroundColor = "red"}, 600) 
             winChecking(5,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][1] = "Y"
@@ -161,6 +189,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[1].style.backgroundColor = "red"}, 500) 
             winChecking(4,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][1] = "Y"
@@ -182,6 +214,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[1].style.backgroundColor = "red"}, 400) 
             winChecking(3,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][1] = "Y"
@@ -203,6 +239,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[1].style.backgroundColor = "red"}, 300) 
             winChecking(2,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][1] = "Y"
@@ -224,6 +264,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[1].style.backgroundColor = "red"}, 200) 
             winChecking(1,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][1] = "Y"
@@ -244,6 +288,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[1].style.backgroundColor = "red"
             winChecking(0,1)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][1] = "Y"
@@ -273,6 +321,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[2].style.backgroundColor = "red"}, 600) 
             winChecking(5,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][2] = "Y"
@@ -293,6 +345,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[2].style.backgroundColor = "red"}, 500) 
             winChecking(4,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][2] = "Y"
@@ -314,6 +370,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[2].style.backgroundColor = "red"}, 400) 
             winChecking(3,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][2] = "Y"
@@ -335,6 +395,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[2].style.backgroundColor = "red"}, 300) 
             winChecking(2,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][2] = "Y"
@@ -356,6 +420,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[2].style.backgroundColor = "red"}, 200)
             winChecking(1,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][2] = "Y"
@@ -376,6 +444,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[2].style.backgroundColor = "red"
             winChecking(0,2)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][2] = "Y"
@@ -404,6 +476,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[3].style.backgroundColor = "red"}, 600) 
             winChecking(5,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][3] = "Y"
@@ -424,6 +500,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[3].style.backgroundColor = "red"}, 500)
             winChecking(4,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][3] = "Y"
@@ -445,6 +525,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[3].style.backgroundColor = "red"}, 400)
             winChecking(3,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][3] = "Y"
@@ -466,6 +550,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[3].style.backgroundColor = "red"}, 300)
             winChecking(2,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][3] = "Y"
@@ -487,6 +575,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[3].style.backgroundColor = "red"}, 200)
             winChecking(1,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][3] = "Y"
@@ -507,6 +599,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[3].style.backgroundColor = "red"
             winChecking(0,3)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][3] = "Y"
@@ -535,6 +631,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[4].style.backgroundColor = "red"}, 600) 
             winChecking(5,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][4] = "Y"
@@ -555,6 +655,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[4].style.backgroundColor = "red"}, 500) 
             winChecking(4,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][4] = "Y"
@@ -576,6 +680,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[4].style.backgroundColor = "red"}, 400) 
             winChecking(3,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][4] = "Y"
@@ -597,6 +705,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[4].style.backgroundColor = "red"}, 300) 
             winChecking(2,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][4] = "Y"
@@ -618,6 +730,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[4].style.backgroundColor = "red"}, 200) 
             winChecking(1,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][4] = "Y"
@@ -638,6 +754,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[4].style.backgroundColor = "red"
             winChecking(0,4)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][4] = "Y"
@@ -666,6 +786,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[5].style.backgroundColor = "red"}, 600)
             winChecking(5,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][5] = "Y"
@@ -686,6 +810,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[5].style.backgroundColor = "red"}, 500)
             winChecking(4,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][5] = "Y"
@@ -707,6 +835,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[5].style.backgroundColor = "red"}, 400)
             winChecking(3,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][5] = "Y"
@@ -728,6 +860,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[5].style.backgroundColor = "red"}, 300)
             winChecking(2,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][5] = "Y"
@@ -749,6 +885,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[5].style.backgroundColor = "red"}, 200)
             winChecking(1,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][5] = "Y"
@@ -769,6 +909,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[5].style.backgroundColor = "red"
             winChecking(0,5)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][5] = "Y"
@@ -797,6 +941,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[5].cells[6].style.backgroundColor = "red"}, 600)
             winChecking(5,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[5][6] = "Y"
@@ -817,6 +965,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[4].cells[6].style.backgroundColor = "red"}, 500)
             winChecking(4,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[4][6] = "Y"
@@ -838,6 +990,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[3].cells[6].style.backgroundColor = "red"}, 400)
             winChecking(3,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[3][6] = "Y"
@@ -859,6 +1015,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[2].cells[6].style.backgroundColor = "red"}, 300)
             winChecking(2,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[2][6] = "Y"
@@ -880,6 +1040,10 @@ function berak_oszlop0() {
             setTimeout(function(){tablazat.rows[1].cells[6].style.backgroundColor = "red"}, 200)
             winChecking(1,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[1][6] = "Y"
@@ -900,6 +1064,10 @@ function berak_oszlop0() {
             tablazat.rows[0].cells[6].style.backgroundColor = "red"
             winChecking(0,6)
             currentPlayer = "sárga"
+            if (SINGLE == true){
+               dobasHelye.className = "visually-hidden"
+               setTimeout(AIdrop, 3000)
+            }
          }
          else {
             tablazat_matrix[0][6] = "Y"
